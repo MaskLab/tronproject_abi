@@ -1,52 +1,45 @@
-Ethereum ABI Coder
-==================
-
-This sub-module is part of the [ethers project](https://github.com/ethers-io/ethers.js).
+# Tron ABI Coder
 
 It is responsible for encoding and decoding the Application Binary Interface (ABI)
 used by most smart contracts to interoperate between other smart contracts and clients.
 
-For more information, see the [documentation](https://docs.ethers.io/v5/api/utils/abi/).
+For more information, see the [documentation](https://docs.tron.io/v5/api/utils/abi/).
 
-Importing
----------
+## Importing
 
-Most users will prefer to use the [umbrella package](https://www.npmjs.com/package/ethers),
+Most users will prefer to use the [umbrella package](https://www.npmjs.com/package/tron),
 but for those with more specific needs, individual components can be imported.
 
 ```javascript
 const {
+  ConstructorFragment,
+  EventFragment,
+  Fragment,
+  FunctionFragment,
+  ParamType,
+  FormatTypes,
 
-    ConstructorFragment,
-    EventFragment,
-    Fragment,
-    FunctionFragment,
-    ParamType,
-    FormatTypes,
+  AbiCoder,
+  defaultAbiCoder,
 
-    AbiCoder,
-    defaultAbiCoder,
+  Interface,
+  Indexed,
 
-    Interface,
-    Indexed,
+  /////////////////////////
+  // Types
 
-    /////////////////////////
-    // Types
+  CoerceFunc,
+  JsonFragment,
+  JsonFragmentType,
 
-    CoerceFunc,
-    JsonFragment,
-    JsonFragmentType,
+  Result,
+  checkResultErrors,
 
-    Result,
-    checkResultErrors,
-
-    LogDescription,
-    TransactionDescription
-
-} = require("@ethersproject/abi");
+  LogDescription,
+  TransactionDescription
+} = require('@tronproject/abi');
 ```
 
-License
--------
+## License
 
 MIT License
